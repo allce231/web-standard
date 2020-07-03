@@ -1,2 +1,1 @@
-# web-standard
-web前端开发规范
+# 前端开发规范

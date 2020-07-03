@@ -1,0 +1,27 @@
+{
+  "name": "web-standards",
+  "version": "1.0.0",
+  "description": "前端开发规范",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allce231/allce231.github.io.git"
+  },
+  "keywords": [
+    "前端开发规范"
+  ],
+  "author": "hanson.liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allce231/allce231.github.io/issues"
+  },
+  "homepage": "https://github.com/allce231/allce231.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  }
+}
