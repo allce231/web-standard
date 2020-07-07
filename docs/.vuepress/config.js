@@ -1,4 +1,5 @@
 module.exports = {
+  base:"./",
   title: '待亲康前端开发规范',
   description: '前端开发指南',
   themeConfig: {
