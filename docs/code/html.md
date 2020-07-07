@@ -35,21 +35,21 @@
 
 ```vue
 <!-- 不推荐 -->
-<tw-component v-if="visible" class="xsmall" data="users" @change="getUsers"></tw-component>
+<sqk-component v-if="visible" class="xsmall" data="users" @change="getUsers"></sqk-component>
 
 <!-- 推荐：示例 1 -->
-<tw-component
+<sqk-component
   v-if="visible"
   class="xsmall"
   data="users"
   @change="getUsers">
-</tw-component>
+</sqk-component>
 
 <!-- 推荐：示例 2 -->
-<tw-component v-if="visible"
+<sqk-component v-if="visible"
               class="xsmall"
               data="users"
               @change="getUsers">
-</tw-component>
+</sqk-component>
 ```
 

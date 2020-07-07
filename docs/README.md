@@ -1,9 +1,9 @@
 ---
 home: true
-heroImage: /assets/image/ant.svg
+heroImage: /assets/image/logo.png
 heroText: 前端开发规范
 tagline: 提高效率，减少Bug!
-actionText: 快速上手a →
+actionText: 快速上手 →
 actionLink: /about/
 features:
 - title: 前端编码准则

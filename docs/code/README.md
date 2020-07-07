@@ -4,9 +4,9 @@
 
 ## 文件夹命名规范
 > 属于components文件夹下的子文件夹，使用大写字母开头的PascalBase风格
-> + 全局通用的组件放在 /src/components下
-> + 其他业务页面中的组件，放在各自页面下的 ./components文件夹下
-> + 每个components文件夹下最多只有一层文件夹，且文件夹名称为组件的名称，文件夹下必须有index.vue或
++ 全局通用的组件放在 /src/components下
++ 其他业务页面中的组件，放在各自页面下的 ./components文件夹下
++ 每个components文件夹下最多只有一层文件夹，且文件夹名称为组件的名称，文件夹下必须有index.vue或
 index.js，其他.vue文件统一大写开头（Pascal case），components下的子文件夹名称统一大写开头（PascalCase）
 其他文件夹统一使用kebab-case的风格
 
