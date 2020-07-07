@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/docs",
+  base: "/docs/",
   dest: ".vuepress/dist/docs",
   title: '待亲康前端开发规范',
   description: '前端开发指南',
