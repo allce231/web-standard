@@ -1,6 +1,6 @@
 # html编码规范
 
-使用HTML5
+使用HTML5 .
 
 ## HTML模板
 ```html

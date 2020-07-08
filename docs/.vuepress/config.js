@@ -3,6 +3,9 @@ module.exports = {
   dest: ".vuepress/dist/docs",
   title: '待亲康前端开发规范',
   description: '前端开发指南',
+  markdown:{
+    extractHeaders: [] //https://www.vuepress.cn/config/#markdown-extractheaders
+  },
   themeConfig: {
     logo: '/assets/image/logo.png',
     lastUpdated: '上次更新',
@@ -32,43 +35,42 @@ module.exports = {
     nav: [
       { text: '前端体系', link: '/about/' },
       { text: '代码规范', link: '/code/' },
+      { text: '常用教程', link: '/course/markdown' },
     ],
     sidebar: {
-      '/about/': [
-        '',     /* /foo/ */
-        'editor',  /* /foo/one.html */
-        'ui'   /* /foo/two.html */
-      ],
-      '/about/': [{
-				title: '前端体系',
-				collapsable: false, 
-				children: [
-					{ title: '编码准则', path:'/about/'},
-					{ title: '设计规范', path:'ui'},
-					{ title: '技术框架', path:'frame'},
-					{ title: '工作流程', path:'process'},
-					{ title: '编辑器', path:'editor'}
-				]
-      }],
-      '/code/': [{
-				title: '代码规范',
-				collapsable: false, 
-				children: [
-					{ title: '目录规范', path:'/code/'},
-					{ title: 'html编码规范', path:'html'}
-				]
-      }],
-      // '/code/': [
-      //   '',      /* /bar/ */
-      //   'html', 
-      // ],
-
-      // // fallback
-      // '/': [
-      //   '',        /* / */
-      //   'contact', /* /contact.html */
-      //   'about'    /* /about.html */
-      // ]
+      '/about/': getSidebar(),
+      '/code/': getSidebar(),
+      '/course/': getSidebar(),
     }
   }
+}
+
+function getSidebar(){
+  return [{
+    title: '前端体系',
+    collapsable: true, 
+    children: [
+      { title: '编码准则', path:'/about/'},
+      { title: '设计规范', path:'/about/ui'},
+      { title: '技术框架', path:'/about/frame'},
+      { title: '工作流程', path:'/about/process'},
+      { title: '编辑器', path:'/about/editor'}
+    ]
+  },{
+    title: '代码规范',
+    collapsable: true, 
+    children: [
+      { title: '目录规范', path:'/code/'},
+      { title: 'html编码规范', path:'/code/html'},
+      { title: 'css规范', path:'/code/css'},
+      { title: 'js规范', path:'/code/js'},
+      { title: 'vue项目创建规范', path:'/code/vue'}
+    ]
+  },{
+    title: '常用教程',
+    collapsable: true, 
+    children: [
+      { title: 'markdown扩展', path:'/course/markdown'}
+    ]
+  }]
 }
