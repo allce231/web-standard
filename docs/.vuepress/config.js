@@ -41,6 +41,7 @@ module.exports = {
       '/about/': getSidebar(),
       '/code/': getSidebar(),
       '/course/': getSidebar(),
+      '/frame/': getSidebar(),
     }
   }
 }
@@ -64,7 +65,23 @@ function getSidebar(){
       { title: 'html编码规范', path:'/code/html'},
       { title: 'css规范', path:'/code/css'},
       { title: 'js规范', path:'/code/js'},
+      { title: '文档规范', path:'/code/docs'},
       { title: 'vue项目创建规范', path:'/code/vue'}
+    ]
+  },{
+    title: '前端框架',
+    collapsable: true, 
+    children: [
+      { title: 'api定义', path:'/frame/'},
+      { title: '路径引用', path:'/frame/route'},
+      { title: '前端页面授权', path:'/frame/oauth'},
+      { title: '工具类对象', path:'/frame/tools'},
+      { title: '前端字典表', path:'/frame/dictionary'},
+      { title: '国际化', path:'/frame/i18n'},
+      { title: '全局常量', path:'/frame/const'},
+      { title: '全局配置项', path:'/frame/config'},
+      { title: '构建配置', path:'/frame/build'},
+      { title: '前端nginx常用配制', path:'/frame/nginx'},
     ]
   },{
     title: '常用教程',
