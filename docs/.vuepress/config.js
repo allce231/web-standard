@@ -87,7 +87,8 @@ function getSidebar(){
     title: '常用教程',
     collapsable: true, 
     children: [
-      { title: 'markdown扩展', path:'/course/markdown'}
+      { title: 'markdown扩展', path:'/course/markdown'},
+      { title: 'H5资源汇总', path:'/course/app'}
     ]
   }]
 }

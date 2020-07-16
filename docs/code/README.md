@@ -2,6 +2,22 @@
 
 从可维护性，可扩展性方面来规范前端项目的目录结构
 
+```
+/* 推荐：资源就近维护 */
+src
+  ├─ api --api接口相关
+  ├─ assets -- 静态资源
+  |   ├─ scss --存放scss
+  |   └─ image -- 存放图片
+  ├─ components --全局组件
+  ├─ plugins --插件
+  ├─ router --路由管理
+  ├─ store --状态管理
+  ├─ utils --用于存放一些公共js资源
+  ├─ views -- vue页面资源
+  ├─ ...
+```
+
 ## 文件夹命名规范
 > 属于components文件夹下的子文件夹，使用大写字母开头的PascalBase风格
 + 全局通用的组件放在 /src/components下
